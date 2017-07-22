@@ -8,13 +8,14 @@ import {
     StyleSheet,
     View,
     Text,
-    Button,
-    TouchableWithoutFeedback
 } from 'react-native';
 import Title from '../components/navigation/TitleBarHOC';
 import PATHS from '../utils/Routing/Paths';
+import Button from '../components/Buttons/Button';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import {primaryColor} from '../theme/Theme';
 
-@Title({title : 'Hooray!'})
+@Title({title : 'Hooray'})
 class MakeHelpRequest extends Component {
 
 
@@ -22,9 +23,14 @@ class MakeHelpRequest extends Component {
         const {navigate} = this.props.navigation;
 
         return (
-            <View>
-                <Text> Make Help Request</Text>
-                <Button onPress={() => {navigate(PATHS.PersonaliseRequest)}} title="Let's go yo"/>
+            <View style={styles.container}>
+                <Text>Make Help Request</Text>
+                <Button
+                    //primary
+                    onPress={() => {navigate(PATHS.PersonaliseRequest)}}
+                    title="Let's go yo!"
+                    icon={<Icon name="heart" size={17} color={primaryColor} />}
+                />
             </View>
         );
     }
@@ -33,4 +39,8 @@ class MakeHelpRequest extends Component {
 export default MakeHelpRequest;
 
 const styles = StyleSheet.create({
+    container : {
+        paddingLeft : 16,
+        paddingRight : 16
+    }
 });
