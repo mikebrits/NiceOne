@@ -41,9 +41,7 @@ export default TitleBar;
 
 const styles = StyleSheet.create({
     container: {
-        paddingLeft: 16,
-        paddingRight : 16,
-        paddingTop: 30,
+        paddingTop: 25,
         marginBottom: 8,
         flexDirection: 'row',
     },

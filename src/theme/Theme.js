@@ -1,2 +1,14 @@
 export const primaryColor = '#FD5739';
 export const gradient = 'linear-gradient(180deg, #FD5739 0%, #428DC2 100%)';
+
+export const defaultTheme = {
+    primary : '#FD5739',
+    pagePadding : ` padding-top : 16px;
+                    padding-bottom : 16px;`
+};
+
+export const blueTheme = {
+    primary : '#537bfd',
+};
+
+export const activeTheme = defaultTheme;

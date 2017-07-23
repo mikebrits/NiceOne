@@ -4,5 +4,25 @@
  * @flow
  */
 import Router from './utils/Routing/Router';
+import React, {Component} from 'react';
+import {ThemeProvider} from 'styled-components/native';
+import {activeTheme} from './theme/Theme';
 
-export default Router;
+/**
+ *
+ * @flow
+ */
+
+
+const App = (props) => {
+
+    return (
+        <ThemeProvider theme={activeTheme}>
+            <Router/>
+        </ThemeProvider>
+    );
+
+}
+
+export default App;
+

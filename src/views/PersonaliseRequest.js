@@ -10,8 +10,9 @@ import {
     Text
 } from 'react-native';
 import Title from '../components/navigation/TitleBarHOC';
+import BasePageLayout from '../components/layout/BasePageLayout';
 
-@Title({title : 'Give it a personal touch', canGoBack : true})
+@BasePageLayout @Title({title : 'Give it a personal touch', canGoBack : true})
 class PersonaliseRequest extends Component {
     render() {
         return (
