@@ -8,7 +8,8 @@ import {
     StyleSheet,
     View,
     Text,
-    TextInput
+    TextInput,
+    ScrollView
 } from 'react-native';
 import BasePageLayout from '../components/layout/BasePageLayout';
 import Title from '../components/navigation/TitleBarHOC';
@@ -20,6 +21,7 @@ import {observer} from 'mobx-react';
 import TextBox from '../components/TextInput/TextBox';
 import styled from 'styled-components/native';
 import $ from '../utils/StringResources';
+import {HelperText} from '../components/Text'
 
 @observer @BasePageLayout @Title({title : $.MakeHelpRequest.title})
 class MakeHelpRequest extends Component {
@@ -35,7 +37,7 @@ class MakeHelpRequest extends Component {
                     value={this.itemText}
                     onClear={() => {this.itemText = ""}}
                 />
-                <HelperText>{$.MakeHelpRequest.helperText}</HelperText>
+                <HelperText> {$.MakeHelpRequest.helperText} </HelperText>
 
                 {/*<Button*/}
                     {/*primary*/}
@@ -49,8 +51,5 @@ class MakeHelpRequest extends Component {
     }
 }
 
-const HelperText = styled.Text`
-    ${({theme}) => theme.HelperText}
-`;
 
 export default MakeHelpRequest;
