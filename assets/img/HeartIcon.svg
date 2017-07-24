@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="147px" height="147px" viewBox="0 0 147 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>HeartIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FD5739" offset="0%"></stop>
+            <stop stop-color="#428DC2" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="69.4839224" cy="69.4839224" r="69.4839224"></circle>
+        <filter x="-4.3%" y="-4.3%" width="108.6%" height="108.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10119452 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <circle id="path-4" cx="69.4579123" cy="69.4579123" r="30.4579123"></circle>
+        <filter x="-9.8%" y="-9.8%" width="119.7%" height="119.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.10119452 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Make-Request-Copy" transform="translate(-115.000000, -102.000000)">
+            <g id="HeartIcon" transform="translate(119.000000, 106.000000)">
+                <g id="Oval-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill-opacity="0.400000006" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="Oval-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill-opacity="0.400000006" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <path d="M69.5000125,78.0000215 C69.6875127,78.0000215 69.875013,77.9297089 70.0156381,77.7890837 L77.3164281,70.7578253 C77.421897,70.6523564 80.000025,68.2968849 80.000025,65.4843815 C80.000025,62.0507837 77.9023663,60 74.3984559,60 C72.3476722,60 70.4257949,61.6171894 69.5000125,62.531253 C68.5742302,61.6171894 66.6523529,60 64.6015692,60 C61.0976588,60 59,62.0507837 59,65.4843815 C59,68.2968849 61.5781281,70.6523564 61.6718782,70.7343878 L68.9843869,77.7890837 C69.1250121,77.9297089 69.3125123,78.0000215 69.5000125,78.0000215 Z" id="Heart---FontAwesome" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

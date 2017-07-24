@@ -7,6 +7,7 @@ import React, {Component} from 'react';
 import {
     View,
     Text,
+    Image
 } from 'react-native';
 import BasePageLayout from '../components/layout/BasePageLayout';
 import Title from '../components/navigation/TitleBarHOC';
@@ -38,6 +39,9 @@ class MakeHelpRequest extends Component {
         console.log('props', this.props.ItemStore);
         return (
             <View>
+                <View style={{justifyContent:'center', alignItems: 'center', width : '100%', marginBottom : 16}}>
+                    <Image source={require('../../assets/img/HeartIcon.png')}/>
+                </View>
                 <TextBox
                     onChangeText={(text) => {
                         this.itemText = text

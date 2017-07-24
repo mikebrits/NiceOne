@@ -5,12 +5,13 @@
 
 import React, {Component} from 'react';
 import {
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
+
 } from 'react-native';
 import Theme from '../../theme/ThemeHOC';
 import styled from 'styled-components/native';
 
-const Button = ({title, icon, onPress, primary, disabled = false, theme}) => {
+const Button = ({title, icon, onPress, primary, disabled = false}) => {
 
     const handlePress = () => {
         if (onPress && disabled === false)
