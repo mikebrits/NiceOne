@@ -20,4 +20,4 @@ export const blueTheme = {
     primary : '#537bfd',
 };
 
-export const activeTheme = defaultTheme;
+export const activeTheme = blueTheme;
