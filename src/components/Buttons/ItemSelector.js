@@ -11,7 +11,6 @@ import {
 import styled from 'styled-components/native';
 
 const ItemSelector = ({title, id, onPress, selected}) => {
-
     return (
         <TouchableWithoutFeedback onPress={() => {onPress(id)}}>
             <Container selected={selected}>

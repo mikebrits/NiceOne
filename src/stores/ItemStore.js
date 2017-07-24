@@ -1,7 +1,6 @@
 import BaseStore from './BaseStore';
 import {observable} from 'mobx';
 
-
 class ItemStoreClass extends BaseStore {
 
     @observable store = [

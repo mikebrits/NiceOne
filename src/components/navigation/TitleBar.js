@@ -17,7 +17,8 @@ const TitleBar = ({title, canGoBack, goBackTo, navigation}) => {
 
 
     const goBack = () => {
-        navigation.goBack(goBackTo)
+        console.log(goBackTo);
+        navigation.goBack(goBackTo || null)
     };
 
     return (

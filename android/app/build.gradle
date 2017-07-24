@@ -92,7 +92,10 @@ def enableProguardInReleaseBuilds = false
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
-
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
     defaultConfig {
         applicationId "com.niceone"
         minSdkVersion 16
@@ -133,6 +136,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-lock')
     compile project(':realm')
     compile project(':react-native-vector-icons')
     compile fileTree(dir: "libs", include: ["*.jar"])

@@ -16,6 +16,7 @@ export const defaultTheme = {
 };
 
 export const blueTheme = {
+    ...defaultTheme,
     primary : '#537bfd',
 };
 

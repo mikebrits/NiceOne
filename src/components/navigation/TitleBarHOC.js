@@ -24,7 +24,7 @@ const TitleBarHOC = (opts = {}) => (Wrapped) => class extends Component {
         <View>
             <TitleBar title={this.options.title}
                       canGoBack={this.options.canGoBack}
-                      gooBackTo={this.options.goBackTo}
+                      goBackTo={this.options.goBackTo}
                       navigation={this.props.navigation}
             />
             <Wrapped {...this.props} />

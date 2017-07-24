@@ -16,13 +16,16 @@
     "lodash": "^4.17.4",
     "mobx": "^3.2.1",
     "mobx-react": "^4.2.2",
+    "query-string": "^5.0.0",
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.3",
     "react-native-img-cache": "^1.4.0",
+    "react-native-lock": "^0.6.0",
     "react-native-vector-icons": "^4.2.0",
     "react-navigation": "^1.0.0-beta.11",
     "realm": "^1.10.0",
     "styled-components": "^2.1.1",
+    "superagent": "^3.5.2",
     "uuid": "^3.1.0"
   },
   "devDependencies": {

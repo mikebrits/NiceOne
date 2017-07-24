@@ -19,5 +19,11 @@ export default {
     Active : "Active",
     Help : "Help",
     Profile : "Profile",
-    ProfileSettings : "ProfileSettings"
+    ProfileSettings : "ProfileSettings",
+
+    //API Calls
+    api : {
+        prefix : '',
+        base_url : '',
+    }
 }

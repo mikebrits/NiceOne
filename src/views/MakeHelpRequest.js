@@ -26,7 +26,8 @@ import _ from 'lodash';
 
 @BasePageLayout
 @Title({title: $.MakeHelpRequest.title})
-@observer(['ItemStore'])
+@inject(['ItemStore'])
+@observer
 class MakeHelpRequest extends Component {
     @observable itemText;
     @observable selectedItems = [];
@@ -36,10 +37,10 @@ class MakeHelpRequest extends Component {
     };
 
     render() {
-        console.log('props', this.props.ItemStore);
+        const {navigate} = this.props.navigation;
         return (
             <View>
-                <View style={{justifyContent:'center', alignItems: 'center', width : '100%', marginBottom : 16}}>
+                <View style={{justifyContent: 'center', alignItems: 'center', width: '100%', marginBottom: 16}}>
                     <Image source={require('../../assets/img/HeartIcon.png')}/>
                 </View>
                 <TextBox
@@ -51,6 +52,7 @@ class MakeHelpRequest extends Component {
                         this.itemText = ""
                     }}
                 />
+                <Text>{this.itemText}</Text>
                 <HelperText> {$.MakeHelpRequest.helperText} </HelperText>
                 <ItemSelector
                     items={this.props.ItemStore.get()}
@@ -66,13 +68,15 @@ class MakeHelpRequest extends Component {
                 </Text>
 
 
-                {/*<Button*/}
-                {/*primary*/}
-                {/*onPress={() => {navigate(PATHS.PersonaliseRequest)}}*/}
-                {/*//disabled={false}*/}
-                {/*title="Let's go yo!"*/}
-                {/*icon={<Icon name="heart" size={17} color={'white'} />}*/}
-                {/*/>*/}
+                <Button
+                    primary
+                    onPress={() => {
+                        navigate(PATHS.PersonaliseRequest)
+                    }}
+                    //disabled={false}
+                    title="Let's go yo!"
+                    icon={<Icon name="heart" size={17} color={'white'}/>}
+                />
             </View>
         );
     }
