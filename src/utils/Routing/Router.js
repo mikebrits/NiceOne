@@ -81,9 +81,15 @@ const ProfileStack = StackNavigator({
     }
 );
 
+import Login from '../../views/Auth/Login';
+
+const AuthLoginStack = StackNavigator({
+    Login: {screen: Login}
+})
 
 const MainScreenNavigator = TabNavigator({
     Ask: {screen: MakeHelpRequestStack},
+    Auth: {screen: AuthLoginStack},
     Active: {screen: ActiveChatStack},
     Help: {screen: MakeOfferStack},
     Profile: {screen: ProfileStack},
